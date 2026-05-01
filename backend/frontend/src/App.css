@@ -1,0 +1,202 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #f9fbfd);
+}
+
+/* CONTAINER */
+.container {
+  width: 420px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+/* FORM */
+.form {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* BUTTON */
+.form button {
+  padding: 10px;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* LIST */
+.list {
+  margin-top: 10px;
+}
+
+/* EMPTY */
+.no-data {
+  text-align: center;
+  color: #999;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.category {
+  color: #2c3e50;
+}
+
+.amount {
+  color: #2e7d32;
+}
+
+/* DESCRIPTION */
+.desc {
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  background: linear-gradient(135deg, #ff5252, #e53935);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+/* DASHBOARD */
+.dashboard {
+  margin-bottom: 25px;
+}
+
+/* BALANCE CARD */
+.balance-card {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.balance-card h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.balance-card h1 {
+  margin: 10px 0 0;
+}
+
+/* SUMMARY */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.income,
+.expense {
+  width: 48%;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* COLORS */
+.income h4 {
+  color: #2e7d32;
+}
+
+.expense h4 {
+  color: #e53935;
+}
+
+.form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 20px;
+}
