@@ -1,14 +1,14 @@
-const Transaction = require("../models/Transaction"); // ✅ IMPORTANT
+const Transaction = require("../models/Transaction"); 
 
 const addTransaction = async (req, res) => {
   try {
-    console.log("📥 Incoming Data:", req.body);
+    console.log(" Incoming Data:", req.body);
 
     const data = await Transaction.create(req.body);
 
     res.status(201).json(data);
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error(" Error:", err);
     res.status(500).json({ error: err.message });
   }
 };
@@ -36,7 +36,7 @@ const deleteTransaction = async (req, res) => {
 
     res.json({ message: "Transaction deleted successfully" });
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error(" Error:", err);
     res.status(500).json({ error: err.message });
   }
 };
@@ -57,7 +57,7 @@ const updateTransaction = async (req, res) => {
 
     res.json(updated);
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error(" Error:", err);
     res.status(500).json({ error: err.message });
   }
 };
