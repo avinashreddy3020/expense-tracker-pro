@@ -1,4 +1,4 @@
-require("./models/db"); // connect MongoDB
+require("./models/db"); 
 
 const express = require("express");
 const cors = require("cors");
